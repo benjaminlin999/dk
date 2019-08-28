@@ -5,7 +5,7 @@ RUN yum install -y wget
 
 RUN cd /
 
-ADD jdk-8u221-linux-x64.tar.gz /
+RUN curl -L -b "oraclelicense=a" https://download.oracle.com/otn/java/jdk/8u221-b11/230deb18db3e4014bb8e3e8324f81b43/jdk-8u221-linux-x64.tar.gz -O
 
 RUN wget https://archive.apache.org/dist/tomcat/tomcat-7/v7.0.82/bin/apache-tomcat-7.0.82.tar.gz
 RUN tar zxvf apache-tomcat-7.0.82.tar.gz
