@@ -13,3 +13,5 @@ RUN tar zxvf apache-tomcat-7.0.82.tar.gz
 ENV JAVA_HOME=/jdk1.8.0_221
 ENV PATH=$PATH:/jdk1.8.0_221/bin
 CMD ["/apache-tomcat-7.0.82/bin/catalina.sh", "run"]
+
+EXPOSE 8080
